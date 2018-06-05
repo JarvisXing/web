@@ -3,11 +3,11 @@
 
     <head>
         <meta charset="utf-8">
-        <title>About </title>
+        <title>Photo </title>
     </head>
     
     <body>
-        about......
+        photo......
     </body>
     
 </html>

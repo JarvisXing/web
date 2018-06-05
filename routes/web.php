@@ -15,3 +15,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('about','WelcomeController@about');
+Route::get('photo','WelcomeController@photo');
+Route::get('news','WelcomeController@news');
