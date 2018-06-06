@@ -46,19 +46,25 @@
             }
 
             .title {
-                font-size: 84px;
+                font-size: 160px;
             }
 
             .links > a {
                 color: #636b6f;
                 padding: 0 25px;
-                font-size: 12px;
+                font-size: 24px;
                 font-weight: 600;
                 letter-spacing: .1rem;
                 text-decoration: none;
                 text-transform: uppercase;
             }
+            .time{
+                color: #000;
+                font-family: 'Times New Roman ', serif;
+                font-size: 40px;
+                font-weight: bold;
 
+            }
             .m-b-md {
                 margin-bottom: 30px;
             }
@@ -78,10 +84,31 @@
             @endif
 
             <div class="content">
+                <div class="time" id="currenttime"></div>
+                <script>
+                function showTime()
+                {
+                    nowtime=new Date();
+                    year=nowtime.getFullYear();
+                    month=nowtime.getMonth()+1;
+                    date=nowtime.getDate();
+                    hour=nowtime.getHours(); 
+                    minute=nowtime.getMinutes();   
+                    second=nowtime.getSeconds();
+                    
+                    document.getElementById("currenttime").innerHTML=hour+":"+minute+":"+second
+                                        //+"<br/>"+year+"-"+month+"-"+date
+                                            
+                }
+                showTime();
+                setInterval("showTime()",1000);
+
+                </script>
+   
                 <div class="title m-b-md">
                     Jarvis
                 </div>
-
+                
                 <div class="links">
                     <a href="{{url('/news')}}">News</a>
                     <a href="{{url('/photo')}}">Photo</a>

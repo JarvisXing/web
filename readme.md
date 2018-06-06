@@ -16,16 +16,16 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 - [Fragrantica](https://www.fragrantica.com)
 
 ## Migrate Database(Mysql)
-copy <code>.env.example</code> saved as <code>.env</code><br>
+copy <code>.env.example</code> saved as <code>.env</code>  
 and modify the following settings to match your database
 <code>
->DB_CONNECTION=mysql<br>
->DB_HOST=127.0.0.1<br>
->DB_PORT=3306<br>
->DB_DATABASE=homestead<br>
->DB_USERNAME=homestead<br>
->DB_PASSWORD=secret<br>
->php artisan migrate<br>
+DB_CONNECTION=mysql  
+DB_HOST=127.0.0.1  
+DB_PORT=3306  
+DB_DATABASE=homestead  
+DB_USERNAME=homestead  
+DB_PASSWORD=secret  
+php artisan migrate  
 </code>
 
 ## License
