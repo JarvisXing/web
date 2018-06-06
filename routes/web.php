@@ -17,3 +17,7 @@ Route::get('/', function () {
 Route::get('about','WelcomeController@about');
 Route::get('photo','WelcomeController@photo');
 Route::get('news','WelcomeController@news');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
