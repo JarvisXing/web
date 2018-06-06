@@ -15,6 +15,19 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 - **[Tighten Co.](https://tighten.co)**
 - [Fragrantica](https://www.fragrantica.com)
 
+## Migrate Database(Mysql)
+copy <code>.env.example</code> saved as <code>.env</code><br>
+and modify the following settings to match your database
+<code>
+>DB_CONNECTION=mysql<br>
+>DB_HOST=127.0.0.1<br>
+>DB_PORT=3306<br>
+>DB_DATABASE=homestead<br>
+>DB_USERNAME=homestead<br>
+>DB_PASSWORD=secret<br>
+>php artisan migrate<br>
+</code>
+
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
