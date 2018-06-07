@@ -1,0 +1,26 @@
+/*
+ * Component: Sidebar
+ * ------------------
+ */
+.main-left-sidebar,
+.left-sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  min-height: 100%;
+  font-size: 25px;
+  z-index: 810;
+  background-color: rgba(1, 32, 41, 0.623);
+}
+.left-sidebar-menu {
+  list-style: none;
+  margin: 15px;
+  padding: 0px;
+}
+.left-sidebar-menu > li {
+  position: relative;
+  margin: 10px;
+  padding: 0px;
+}
