@@ -21,6 +21,10 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/sidebar.css') }}" rel="stylesheet">
 
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+
+
+
 </head>
 <body>
     <div id="app">
@@ -77,9 +81,14 @@
             @yield('content')
         </main>
         <aside class="main-sidebar">
-        <!-- sidebar: style can be found in sidebar.less -->
-          <!-- sidebar menu: : style can be found in sidebar.less -->
-            <a href="bing.com">Dashboard</a>
+        <div style="font-size:1em; color:Tomato">
+              <i class="fas fa-camera-retro"></i>
+              <a href="bing.com">Dashboard</a>
+
+        </div>   
+        <ul class="fa-ul">
+  <li><span class="fa-li"><i class="fas fa-spinner fa-pulse"></i></span>replace bullets</li>
+</ul>     
         </aside>
     </div>
 </body>
