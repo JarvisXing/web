@@ -7,7 +7,7 @@
     position: relative;
     max-height: 100px;
     z-index: 1030;
-    background-color:rgba(1, 32, 41, 0.623);
+    background-color:rgba(0, 0, 0, 1);
     top: 0;
     left: 0;
     padding-top: 50px;
@@ -19,15 +19,40 @@
         display:block;
         position: relative;
         margin-bottom: 0px;
-        margin-left: 200px;
+        margin-left: 400px;
 
         .nav-item{
             list-style-type:none;
             width:50px;
-            float:left; /* 往左浮动 */
-        >.dropdown{
-            float:left; 
+            float:left;         
         }
+        .nav-item-dropdown{
+            display:block;
+            list-style: none;
+            float:right;         
+        >.dropdown-menu{
+            position: relative;
+            width: 100px;
+            padding: 0 0 0 0;
+            margin:  20px 20px 20px 20px;
+            top:22px;
+            left:200px;
+            
+            font-size: 18px;
+            text-align: center;
+            > li >a>.fas{
+                color:orange;
+
+            }
+            > .divider {
+                height:1px;
+            background-color: #eee;
+            }
+              
+
+
+            }
+            
         }
    
     }

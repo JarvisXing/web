@@ -2,5 +2,6 @@
     "/js/app.js": "/js/app.js",
     "/css/left-sidebar.css": "/css/left-sidebar.css",
     "/css/header.css": "/css/header.css",
-    "/css/app.css": "/css/app.css"
+    "/css/app.css": "/css/app.css",
+    "/js/fontawesome-all.js": "/js/fontawesome-all.js"
 }

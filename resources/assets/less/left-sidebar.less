@@ -6,17 +6,34 @@
 //Main Sidebar
 // ``` .left-side has been deprecated as of 2.0.0 in favor of .main-sidebar ```
 
+@import './fontawesome/fontawesome';
+@import './fontawesome/fa-solid';
+@import './fontawesome/fa-brands';
+
+@import 'variables';
+
+.nav-item {
+  .fa-icon;
+  .fas;
+  .fa-fw;
+  &:before {
+    content: @fa-var-chart-area;
+    background:blue;
+    color:orange;
+
+  }
+}
 .main-left-sidebar,
 .left-sidebar{
   position: absolute;
   top: 0;
   left: 0;
-  padding-top: 50px;
+  padding-top: 100px;
   padding-bottom: 50px;
   min-height: 100%;
   font-size: 25px;
   z-index: 810;
-  background-color:rgba(1, 32, 41, 0.623);
+  background-color:rgb(0, 0, 0,1);
 }
 // Sidebar menu
 .left-sidebar-menu {  
