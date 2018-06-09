@@ -11,40 +11,50 @@
 @import './fontawesome/fa-brands';
 
 @import 'variables';
-
+/*
 .nav-item {
   .fa-icon;
   .fas;
   .fa-fw;
   &:before {
     content: @fa-var-chart-area;
-    background:blue;
     color:orange;
 
   }
 }
+*/
 .main-left-sidebar,
 .left-sidebar{
   position: absolute;
   top: 0;
   left: 0;
+  width: 180px;
   padding-top: 100px;
   padding-bottom: 50px;
   min-height: 100%;
-  font-size: 25px;
-  z-index: 810;
+  font-size: 20px;
   background-color:rgb(0, 0, 0,1);
-}
-// Sidebar menu
-.left-sidebar-menu {  
+  // Sidebar menu
+  .left-sidebar-menu {  
 
-  list-style:none;
-  margin: 15px;
-  padding: 0px;
-  //First Level
-  > li {
-    position: relative;
-    margin: 10px;
+    list-style:none;
+    margin: 15px;
     padding: 0px;
-   }
-  }
+    display:block;
+    list-style: none;
+    float:left; 
+    > li {
+      position: relative;
+      margin: 0px;
+      padding: 0px;
+      > a {
+        padding: 12px 5px 12px 15px;
+        display: block;
+      }
+      .badge {
+        margin-top: 3px;
+        margin-right: 5px;
+      }
+    }
+    }
+}

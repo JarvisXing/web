@@ -105,7 +105,6 @@
                         <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown" >
                             <i class="fas fa-user"></i>
                             <span class="hidden-xs">{{ Auth::user()->name }}<b class="caret"></b></span>
-
                         </a>
                         <ul class="dropdown-menu">
                             <li class ="dropdown-item">
@@ -116,10 +115,12 @@
                             </li>
                             <li class="divider"></li>
                             <li class ="dropdown-item">
-                                <a href="{{ route('logout') }}">
                                 <i class="fas fa-sign-out-alt"></i>
+
+                                <a href="{{ route('logout') }}">
                                 {{ __('Logout') }}
                                 </a>
+
                             </li>
                         </ul>
                     </li>
@@ -139,7 +140,7 @@
                         <a href="{{route('logout')}}" 
                             onclick="event.preventDefault();
                                 document.getElementById('logout-form').submit();">
-                            <i class="fas fa-hourglass-start"></i>
+                            <i class="fas fa-hourglass-start"></i><span>General</span>
                         </a>
                     </li>
                     <!--dashboard-->
@@ -147,7 +148,7 @@
                         <a href="{{route('logout')}}" 
                             onclick="event.preventDefault();
                                 document.getElementById('logout-form').submit();">
-                            <i class="fas fa-chart-area"></i>
+                            <i class="fas fa-chart-area"></i><span>Dashboard</span>
                         </a>
                     </li>
                     <!--Money-->
@@ -155,7 +156,7 @@
                         <a href="{{route('logout')}}" 
                             onclick="event.preventDefault();
                                 document.getElementById('logout-form').submit();">
-                            <i class="fas fa-money-check-alt"></i>
+                            <i class="fas fa-money-check-alt"></i><span>Money</span>
                         </a>
                     </li>
                     <!--Media-->
@@ -163,7 +164,7 @@
                         <a href="{{route('logout')}}"
                             onclick="event.preventDefault();
                                 document.getElementById('logout-form').submit();">
-                            <i class="fab fa-youtube"></i>
+                            <i class="fab fa-youtube"></i><span>Media</span>
                         </a>
                     </li>
                     <!--Research-->
@@ -171,7 +172,7 @@
                         <a href="{{route('logout')}}"
                             onclick="event.preventDefault();
                                 document.getElementById('logout-form').submit();">
-                            <i class="fas fa-graduation-cap"></i>
+                            <i class="fas fa-graduation-cap"></i><span>Research</span>
                         </a>
                     </li>
                     <!--Users-->
@@ -179,7 +180,7 @@
                         <a href="{{route('logout')}}"
                             onclick="event.preventDefault();
                                 document.getElementById('logout-form').submit();">
-                            <i class="fas fa-users"></i>
+                            <i class="fas fa-users"></i><span>Users</span>
                         </a>
                     </li>
                     <!--Settings-->
@@ -187,7 +188,7 @@
                         <a href="{{route('logout')}}"
                             onclick="event.preventDefault();
                                 document.getElementById('logout-form').submit();">
-                            <i class="fas fa-cog"></i>
+                            <i class="fas fa-cog"></i><span>Setting</span>
                         </a>
                     </li>
                 </ul>
@@ -196,10 +197,13 @@
 
         <!-- Content wrapper. Contains page content -->
         <div class="main-content">
-            <!--@yield('content')-->
+            @yield('content')
         </div>
         <!-- footer-->
         <footer class="main-footer">
+         <i class="fas fa-user-astronaut" style="color: #a94442; font-size: 10px"></i> 
+          This web is made by Jarvis!
+         <i class="fas fa-user-astronaut" style="color: #a94442; font-size: 10px"></i> 
 
         </footer>
        

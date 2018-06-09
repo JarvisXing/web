@@ -3213,51 +3213,51 @@
 .fab {
   font-family: 'Font Awesome 5 Brands';
 }
+/*
 .nav-item {
-  font-weight: normal;
-  vertical-align: -0.125em;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  line-height: 1;
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 900;
-  text-align: center;
-  width: 1.25em;
+  .fa-icon;
+  .fas;
+  .fa-fw;
+  &:before {
+    content: @fa-var-chart-area;
+    color:orange;
+
+  }
 }
-.nav-item.fa-pull-left {
-  margin-right: .3em;
-}
-.nav-item.fa-pull-right {
-  margin-left: .3em;
-}
-.nav-item:before {
-  content: "\F1FE";
-  background: blue;
-  color: orange;
-}
+*/
 .main-left-sidebar,
 .left-sidebar {
   position: absolute;
   top: 0;
   left: 0;
+  width: 180px;
   padding-top: 100px;
   padding-bottom: 50px;
   min-height: 100%;
-  font-size: 25px;
-  z-index: 810;
+  font-size: 20px;
   background-color: #000000;
 }
-.left-sidebar-menu {
-  list-style: none;
+.main-left-sidebar .left-sidebar-menu,
+.left-sidebar .left-sidebar-menu {
   margin: 15px;
   padding: 0px;
+  display: block;
+  list-style: none;
+  float: left;
 }
-.left-sidebar-menu > li {
+.main-left-sidebar .left-sidebar-menu > li,
+.left-sidebar .left-sidebar-menu > li {
   position: relative;
-  margin: 10px;
+  margin: 0px;
   padding: 0px;
+}
+.main-left-sidebar .left-sidebar-menu > li > a,
+.left-sidebar .left-sidebar-menu > li > a {
+  padding: 12px 5px 12px 15px;
+  display: block;
+}
+.main-left-sidebar .left-sidebar-menu > li .badge,
+.left-sidebar .left-sidebar-menu > li .badge {
+  margin-top: 3px;
+  margin-right: 5px;
 }
