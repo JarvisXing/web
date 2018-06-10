@@ -15,6 +15,7 @@
     "cross-env": "^5.1.6",
     "jquery": "^3.2",
     "laravel-mix": "^2.0",
+    "less": "^3.0.4",
     "less-loader": "^4.1.0",
     "lodash": "^4.17.4",
     "popper.js": "^1.12",
@@ -36,5 +37,12 @@
   "bugs": {
     "url": "https://github.com/JarvisXing/web/issues"
   },
-  "homepage": "https://github.com/JarvisXing/web#readme"
+  "homepage": "https://github.com/JarvisXing/web#readme",
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "echarts": "^4.1.0",
+    "echarts-gl": "^1.1.1",
+    "rollup-plugin-node-resolve": "^3.3.0",
+    "rollup-plugin-uglify": "^4.0.0"
+  }
 }

@@ -25,6 +25,8 @@ Route::get('home', 'HomeController@home')->name('home');
 Route::get('db','WelcomeController@db');  
 Route::get('dbins','WelcomeController@dbins');  
 
+Route::get('movies/chart','MovieController@chart');
+
 Route::get('movies','MovieController@index')->name('movies.index');
 Route::get('movies/create','MovieController@create')->name('movies.create');
 Route::post('movies/store','MovieController@store');

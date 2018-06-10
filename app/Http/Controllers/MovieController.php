@@ -7,7 +7,6 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Schema;
 
-
 class MovieController extends Controller
 {
     public function index()
@@ -16,6 +15,10 @@ class MovieController extends Controller
         $movies=DB::select("select * from movies");
         return view('movies.index')->with(['movies_column'=>$movies_column,'moives_data'=>$movies]);
 
+    }
+    public function chart()
+    {
+        return view('movies.chart');
     }
     public function create()
     {
