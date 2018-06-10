@@ -24,7 +24,6 @@
     <link href="{{ asset('css/left-sidebar.css') }}" rel="stylesheet">
     <link href="{{ asset('css/header.css') }}" rel="stylesheet">
 
-
 </head>
 <body>
     <div class="wrapper">
@@ -37,57 +36,43 @@
                     <!--@endcan-->
                     <!--regularly used-->
                     <li class="nav-item">
-                        <a href="{{route('logout')}}" 
-                            onclick="event.preventDefault();
-                                document.getElementById('logout-form').submit();">
+                        <a href="{{route('welcome')}}">
                             <i class="fas fa-hourglass-start"></i>
                         </a>
                     </li>
                     <!--dashboard-->
                     <li class="nav-item">
-                        <a href="{{route('logout')}}" 
-                            onclick="event.preventDefault();
-                                document.getElementById('logout-form').submit();">
+                        <a href="{{route('welcome')}}">
                             <i class="fas fa-chart-area"></i>
                         </a>
                     </li>
                     <!--Money-->
                     <li class="nav-item">
-                        <a href="{{route('logout')}}" 
-                            onclick="event.preventDefault();
-                                document.getElementById('logout-form').submit();">
+                        <a href="{{route('welcome')}}">
                             <i class="fas fa-money-check-alt"></i>
                         </a>
                     </li>
                     <!--Media-->
                     <li class="nav-item">
-                        <a href="{{route('logout')}}"
-                            onclick="event.preventDefault();
-                                document.getElementById('logout-form').submit();">
+                        <a href="{{route('welcome')}}">
                             <i class="fab fa-youtube"></i>
                         </a>
                     </li>
                     <!--Research-->
                     <li class="nav-item">
-                        <a href="{{route('logout')}}"
-                            onclick="event.preventDefault();
-                                document.getElementById('logout-form').submit();">
+                        <a href="{{route('welcome')}}">
                             <i class="fas fa-graduation-cap"></i>
                         </a>
                     </li>
                     <!--Users-->
                     <li class="nav-item">
-                        <a href="{{route('logout')}}"
-                            onclick="event.preventDefault();
-                                document.getElementById('logout-form').submit();">
+                        <a href="{{route('welcome')}}">
                             <i class="fas fa-users"></i>
                         </a>
                     </li>
                     <!--Settings-->
                     <li class="nav-item">
-                        <a href="{{route('logout')}}"
-                            onclick="event.preventDefault();
-                                document.getElementById('logout-form').submit();">
+                        <a href="{{route('welcome')}}">
                             <i class="fas fa-cog"></i>
                         </a>
                     </li>
@@ -108,7 +93,7 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li class ="dropdown-item">
-                                <a href="{{ route('logout') }}">
+                                <a href="{{route('welcome')}}" >
                                 <i class="fas fa-info-circle"></i>
                                 Profile
                                 </a>
@@ -117,7 +102,7 @@
                             <li class ="dropdown-item">
                                 <i class="fas fa-sign-out-alt"></i>
 
-                                <a href="{{ route('logout') }}">
+                                <a href="{{ route('welcome') }}">
                                 {{ __('Logout') }}
                                 </a>
 
@@ -137,57 +122,43 @@
                     <!--@endcan-->
                     <!--regularly used-->
                     <li class="nav-item">
-                        <a href="{{route('logout')}}" 
-                            onclick="event.preventDefault();
-                                document.getElementById('logout-form').submit();">
+                        <a href="{{route('welcome')}}">
                             <i class="fas fa-hourglass-start"></i><span>General</span>
                         </a>
                     </li>
                     <!--dashboard-->
                     <li class="nav-item">
-                        <a href="{{route('logout')}}" 
-                            onclick="event.preventDefault();
-                                document.getElementById('logout-form').submit();">
+                        <a href="{{route('welcome')}}">
                             <i class="fas fa-chart-area"></i><span>Dashboard</span>
                         </a>
                     </li>
                     <!--Money-->
                     <li class="nav-item">
-                        <a href="{{route('logout')}}" 
-                            onclick="event.preventDefault();
-                                document.getElementById('logout-form').submit();">
+                        <a href="{{route('welcome')}}">
                             <i class="fas fa-money-check-alt"></i><span>Money</span>
                         </a>
                     </li>
                     <!--Media-->
                     <li class="nav-item">
-                        <a href="{{route('logout')}}"
-                            onclick="event.preventDefault();
-                                document.getElementById('logout-form').submit();">
+                        <a href="{{route('welcome')}">
                             <i class="fab fa-youtube"></i><span>Media</span>
                         </a>
                     </li>
                     <!--Research-->
                     <li class="nav-item">
-                        <a href="{{route('logout')}}"
-                            onclick="event.preventDefault();
-                                document.getElementById('logout-form').submit();">
+                        <a href="{{route('welcome')}">
                             <i class="fas fa-graduation-cap"></i><span>Research</span>
                         </a>
                     </li>
                     <!--Users-->
                     <li class="nav-item">
-                        <a href="{{route('logout')}}"
-                            onclick="event.preventDefault();
-                                document.getElementById('logout-form').submit();">
+                        <a href="{{route('welcome')}">
                             <i class="fas fa-users"></i><span>Users</span>
                         </a>
                     </li>
                     <!--Settings-->
                     <li class="nav-item">
-                        <a href="{{route('logout')}}"
-                            onclick="event.preventDefault();
-                                document.getElementById('logout-form').submit();">
+                        <a href="{{route('welcome')}">
                             <i class="fas fa-cog"></i><span>Setting</span>
                         </a>
                     </li>

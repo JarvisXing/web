@@ -36,7 +36,7 @@
                     <!--@endcan-->
                     <!--regularly used-->
                     <li class="nav-item">
-                        <a href="{{route('logout')}}" 
+                        <a href="{{route('welcome')}}" 
                             onclick="event.preventDefault();
                                 document.getElementById('logout-form').submit();">
                             <i class="fas fa-hourglass-start"></i><span>General</span>

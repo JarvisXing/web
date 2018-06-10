@@ -10418,8 +10418,8 @@ a.text-dark:focus {
 }
 
 .card-body {
-  font-size: 50px;
-  background-color: rgba(100, 100, 250, 0.623);
+  font-size: 20px;
+  background-color: rgba(40, 40, 43, 0.671);
   -webkit-box-shadow: 0 2px 4px rgba(13, 206, 61, 0.04);
           box-shadow: 0 2px 4px rgba(13, 206, 61, 0.04);
 }

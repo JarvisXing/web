@@ -112,6 +112,7 @@
                 <div class="links">
                     <a href="{{url('/news')}}">News</a>
                     <a href="{{url('/photo')}}">Photo</a>
+                    <a href="{{route('movies.index')}}">Movie</a>
                     <a href="{{url('/about')}}">About</a>
                 </div>
             </div>

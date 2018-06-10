@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 class WelcomeController extends Controller
 {
+    
     public function about(){
         return view('welcome.about');
     }
